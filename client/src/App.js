@@ -1,23 +1,11 @@
-import logo from './logo.svg';
+/* eslint-disable react/jsx-pascal-case */
 import './App.css';
-
+import Chat from "../src/components/chat.component.tsx";
+import Chat_interface from "../src/interfaces/chat.interface.tsx"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Chat_interface Component ={Chat} />
     </div>
   );
 }
